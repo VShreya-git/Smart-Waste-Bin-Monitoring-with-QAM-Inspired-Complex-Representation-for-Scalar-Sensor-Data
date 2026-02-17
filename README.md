@@ -1,4 +1,4 @@
-# Smart-Waste-Bin-Monitoring-with-QAM-Inspired-Complex-Representation-for-Scalar-Sensor-Data
+# Smart Waste Bin Monitoring with QAM-Inspired Complex Representation for Scalar Sensor Data
 
 This project presents a novel QAM-inspired complex-domain analytical framework for interpreting scalar IoT sensor data from a Smart Waste Bin prototype.
 
