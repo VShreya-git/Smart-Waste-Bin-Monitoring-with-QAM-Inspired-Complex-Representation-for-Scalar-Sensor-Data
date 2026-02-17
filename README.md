@@ -81,7 +81,7 @@ This allows:
 
 The analytical layer provides deeper insight into bin usage patterns beyond simple threshold detection.
 
-### Conclusion
+## Conclusion
 This project demonstrates a Smart Waste Bin system that integrates real-time sensing, automated actuation, and wireless communication with a novel QAM-inspired complex-domain analytical framework.
 
 The hardware prototype ensures hygienic, touch-free operation and intelligent event detection through ultrasonic, IR, and gas sensing modules controlled by the ESP32. Beyond conventional threshold-based monitoring, the proposed complex representation transforms scalar sensor readings into magnitude–phase form, enabling deeper insight into temporal system behavior.
