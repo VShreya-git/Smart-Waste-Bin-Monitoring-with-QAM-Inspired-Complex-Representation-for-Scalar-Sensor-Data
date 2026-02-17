@@ -51,6 +51,6 @@ When gas concentration exceeds safety limits, a warning message is displayed and
 
 V) Telegram message sent to registered no. for bin full and toxic gas alert
 
-<img width="242" height="93" alt="Picture7" src="https://github.com/user-attachments/assets/a0d36035-fbaf-46e0-ae6c-2e558d4eefdd" />
+<img width="244" height="120" alt="Picture8" src="https://github.com/user-attachments/assets/3a2591d8-cf8e-43f4-8491-cf4136120772" />
 
 
