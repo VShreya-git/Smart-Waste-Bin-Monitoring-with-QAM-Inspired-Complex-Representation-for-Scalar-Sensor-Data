@@ -41,9 +41,7 @@ When the IR sensor detects a hand:
 
 •	The lid opens automatically.
 
-•	After a fixed delay (e.g., 3 seconds):
-
-•	The lid closes automatically.
+•	After a fixed delay (e.g., 3 seconds): The lid closes automatically.
 
 This ensures touch-free operation.
 
