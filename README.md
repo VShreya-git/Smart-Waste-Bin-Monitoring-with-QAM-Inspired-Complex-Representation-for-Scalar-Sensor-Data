@@ -5,6 +5,20 @@ This project presents a novel QAM-inspired complex-domain analytical framework f
 Traditional IoT systems process sensor data using thresholding, averaging, or basic time-domain techniques. These scalar-only approaches fail to capture the relationship between instantaneous sensor value and its temporal variation.
 Inspired by Quadrature Amplitude Modulation (QAM) in communication systems, this work maps scalar sensor readings into the complex plane, enabling hybrid signal-processing analysis combining magnitude and rate-of-change information.
 
+## Requirements
+
+Hardware:
+- ESP32-WROOM-32E
+- HC-SR04 Ultrasonic Sensor
+- LM393 IR Sensor
+- Gas Sensor
+- Servo Motor
+- LCD Display
+
+Software:
+- Arduino IDE
+- MATLAB (for analysis)
+
 ## System Workflow
 
 The Smart Waste Bin operates through a continuous sensing–processing–response cycle controlled by the ESP32 microcontroller.
