@@ -5,28 +5,80 @@ This project presents a novel QAM-inspired complex-domain analytical framework f
 Traditional IoT systems process sensor data using thresholding, averaging, or basic time-domain techniques. These scalar-only approaches fail to capture the relationship between instantaneous sensor value and its temporal variation.
 Inspired by Quadrature Amplitude Modulation (QAM) in communication systems, this work maps scalar sensor readings into the complex plane, enabling hybrid signal-processing analysis combining magnitude and rate-of-change information.
 
-### Core Concept
-Each scalar sensor sample is transformed into a complex representation:
+### System Workflow
 
-Where:  Zn = Xn  + j(Xn  - Xn-1 )
-Real part (I) → Normalized sensor value
-Imaginary part (Q) → Discrete derivative (rate of change)
-Magnitude |zₙ| → Activity intensity
-Phase θₙ → Direction of temporal behavior
+The Smart Waste Bin operates through a continuous sensing–processing–response cycle controlled by the ESP32 microcontroller.
 
-This enables:
+Step 1: Continuous Sensing
+
+Ultrasonic Sensor (HC-SR04) continuously measures the distance between the sensor and the garbage surface using time-of-flight echo measurement.
+
+IR Sensor (LM393) monitors hand proximity for automatic lid operation.
+
+Gas Sensor detects harmful or toxic gas concentration inside the bin.
+
+All sensor readings are periodically acquired by the ESP32.
+
+Step 2: Local Processing (ESP32)
+
+The ESP32 performs real-time processing:
+
+Converts ultrasonic echo time into distance (fill level).
+
+Compares fill level with a predefined threshold.
+
+Reads IR sensor state for proximity detection.
+
+Monitors gas sensor value against safety limits.
+
+Generates PWM signals to control the servo motor.
+
+Step 3: Lid Automation
+
+When the IR sensor detects a hand:
+
+The ESP32 drives the servo motor.
+
+The lid opens automatically.
+
+After a fixed delay (e.g., 3 seconds):
+
+The lid closes automatically.
+
+This ensures touch-free operation.
+
+Step 4: Event Detection
+
+The system detects key operational events:
+
+Bin Full Condition:
+Triggered when measured distance falls below a defined threshold.
+
+Toxic Gas Alert:
+Triggered when gas sensor reading exceeds the safety limit.
+
+Step 5: Communication & Alerts
+
+When critical conditions occur:
+
+The ESP32 uses its in-built WiFi module.
+
+A Telegram notification is sent to the registered user.
+
+LCD display updates current bin status.
+
+Step 6: Data Logging & Analytical Processing
+
+Sensor data is stored and later processed in MATLAB using a QAM-inspired complex mapping:
+
+
+
+This allows:
+
+Magnitude-based activity monitoring
+
+Phase-based dynamic behavior analysis
+
 Complex-plane trajectory visualization
-Phase-based event detection
-Dynamic feature extraction
-Modulation-style sensor analytics
 
-### System Architecture
-Hardware Components:
-ESP32-WROOM-32E microcontroller
-HC-SR04 Ultrasonic Sensor (fill level detection)
-LM393 IR Sensor (proximity detection)
-Servo Motor (automatic lid control)
-Gas Sensor (toxic gas monitoring)
-16x2 LCD Display
-In-built WiFi module (Telegram alerts)
-
+The analytical layer provides deeper insight into bin usage patterns beyond simple threshold detection.
