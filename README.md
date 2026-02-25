@@ -19,6 +19,9 @@ Software:
 - Arduino IDE
 - MATLAB (for analysis)
 
+## System Architecture
+<img width="1863" height="644" alt="Screenshot 2026-02-25 195150" src="https://github.com/user-attachments/assets/fad57374-6150-47c6-9e07-b4fd64f50bbf" />
+
 ## System Workflow
 
 The Smart Waste Bin operates through a continuous sensing–processing–response cycle controlled by the ESP32 microcontroller.
