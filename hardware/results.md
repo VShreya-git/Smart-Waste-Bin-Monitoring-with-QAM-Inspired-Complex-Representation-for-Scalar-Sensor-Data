@@ -1,30 +1,10 @@
 # Hardware Design
-### 1. Block Diagram
 
-The block diagram illustrates the overall architecture of the Smart Waste Bin system.
-The ESP32 acts as the central controller interfacing with:
-
-•	Ultrasonic sensor (fill-level measurement)
-
-•	IR sensor (proximity detection)
-
-•	Gas sensor (toxic gas monitoring)
-
-•	Servo motor (lid actuation)
-
-•	LCD display (status output)
-
-•	WiFi module (alert transmission)
-
-All sensor inputs are processed locally before triggering actuation or communication events.
-
-<img width="400" height="543" alt="Block diagram" src="https://github.com/user-attachments/assets/70197f70-08eb-4b5c-bc83-02f9e0ab8e7a" />
-
-### 2. Hardware Setup
+### 1. Hardware Setup
 
 ![Setup](https://github.com/user-attachments/assets/e0622999-5c1f-453a-9eab-01a2934e017b)
 
-### 3. Demonstration Results
+### 2. Demonstration Results
 I) Bin Initialization
 
 <img width="234" height="106" alt="Picture4" src="https://github.com/user-attachments/assets/9801987f-fb15-487c-bc0d-bfbd98622cd7" />
