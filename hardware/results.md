@@ -2,7 +2,8 @@
 
 ### 1. Hardware Setup
 
-![Setup](https://github.com/user-attachments/assets/e0622999-5c1f-453a-9eab-01a2934e017b)
+<img width="944" height="530" alt="Screenshot 2026-03-31 183445" src="https://github.com/user-attachments/assets/b1b62e54-1beb-46ce-a13d-fdff21e05e82" />
+
 
 ### 2. Demonstration Results
 I) Bin Initialization
